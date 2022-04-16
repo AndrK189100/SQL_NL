@@ -2,11 +2,12 @@ from typing import List
 import spotify
 import psycopg2
 import json
-import pprint
+import sql_requests
+import sql_requests_2
 
 
-def create_json(data: list):
-    with open('db_data.json', 'w', encoding='utf-8') as f:
+def create_json(data: list, file_name: str):
+    with open(file_name, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
@@ -15,116 +16,141 @@ def load_json(file_name: str):
         return json.load(f)
 
 
-def get_data(playlist_ids: list, limit: int, client_id, client_secret):
+def get_playlists(playlist_ids: list, limit: int, client_id, client_secret, file_name: str):
     sp = spotify.Spotify(client_id, client_secret)
-    db_data = sp.get_playlists(playlist_ids, limit)
-    create_json(db_data)
+    db_playlists = sp.get_playlists(playlist_ids, limit)
+    create_json(db_playlists, file_name)
 
-def fill_db(dbname, user, password, host):
-    db_data = load_json('db_data.json')
 
-    insert_genres = 'INSERT INTO genres(name) VALUES (%s) ON CONFLICT ON CONSTRAINT genre_unic DO NOTHING'
+def get_albums(album_ids: list, limit: int, client_id, client_secret, file_name: str):
+    sp = spotify.Spotify(client_id, client_secret)
+    db_albums = sp.get_albums(album_ids, limit)
+    create_json(db_albums, file_name)
 
-    insert_artists = 'INSERT INTO artists(name) VALUES(%s) ON CONFLICT ON CONSTRAINT artist_unic DO NOTHING'
 
-    insert_albums = 'INSERT INTO albums(name, start_year) VALUES (%s, %s)' \
-                    'ON CONFLICT ON CONSTRAINT album_unic DO NOTHING'
-
-    insert_collections = 'INSERT INTO collections(name, start_year) VALUES (%s, %s) ' \
-                         'ON CONFLICT ON CONSTRAINT collection_unic DO NOTHING'
-
-    insert_tracks = 'INSERT INTO tracks(name, duration, album_id) SELECT %s, %s, albums.id ' \
-                    'FROM albums WHERE albums.name = %s ON CONFLICT ON CONSTRAINT track_unic DO NOTHING'
-
-    insert_albums_artists = 'INSERT INTO albums_artists(album_id, artist_id)' \
-                            'VALUES ((SELECT albums.id FROM albums WHERE albums.name = %s),' \
-                            '(SELECT artists.id FROM artists WHERE artists.name = %s))' \
-                            'ON CONFLICT ON CONSTRAINT pk_aa DO NOTHING'
-
-    insert_collections_tracks = 'INSERT INTO collections_tracks(collection_id, track_id)' \
-                                'VALUES((SELECT collections.id FROM collections WHERE collections.name = %s),' \
-                                      '(SELECT tracks.id FROM tracks WHERE tracks.name = %s))'
-
-    insert_genres_artists = 'INSERT INTO genres_artists(genre_id, artist_id)' \
-                            'VALUES ((SELECT genres.id FROM genres WHERE genres.name = %s),' \
-                                    '(SELECT artists.id FROM artists WHERE artists.name = %s))' \
-                            'ON CONFLICT ON CONSTRAINT pk_ga DO NOTHING'
+def fill_playlists(dbname, user, password, host, file_name: str):
+    db_data = load_json(file_name)
 
     conn = psycopg2.connect(dbname=dbname, user=user, password=password, host=host)
     cursor = conn.cursor()
 
     for item in db_data:
 
-        cursor.execute(insert_albums, [item['album'], item['album_release'][0:4]])
-        cursor.execute(insert_collections, [item['playlist'], item['playlist_release']])
+        cursor.execute(sql_requests.insert_albums, [item['album'], item['album_release'][0:4]])
+        cursor.execute(sql_requests.insert_collections, [item['playlist'], item['playlist_release']])
 
         for artist in item['artists']:
-            cursor.execute(insert_artists, [artist])
-            cursor.execute(insert_albums_artists, [item['album'], artist])
+            cursor.execute(sql_requests.insert_artists, [artist])
+            cursor.execute(sql_requests.insert_albums_artists, [item['album'], artist])
             for genre in item['artists'][artist]:
-                cursor.execute(insert_genres, [genre])
+                cursor.execute(sql_requests.insert_genres, [genre])
 
-        cursor.execute(insert_tracks, [item['track'], item['duration'] / 1000, item['album']])
-        cursor.execute(insert_collections_tracks, [item['playlist'], item['track']])
+        cursor.execute(sql_requests.insert_tracks, [item['track'], item['duration'] / 1000, item['album']])
+        cursor.execute(sql_requests.insert_collections_tracks, [item['playlist'], item['track']])
 
         for artist in item['artists']:
             for genre in item['artists'][artist]:
-                cursor.execute(insert_genres_artists, [genre, artist])
+                cursor.execute(sql_requests.insert_genres_artists, [genre, artist])
 
     conn.commit()
     cursor.close()
     conn.close()
 
+def fill_albums(dbname, user, password, host, file_name: str):
+    db_data = load_json(file_name)
+
+    conn = psycopg2.connect(dbname=dbname, user=user, password=password, host=host)
+    cursor = conn.cursor()
+
+    for item in db_data:
+        cursor.execute(sql_requests.insert_albums, [item['album'], item['album_release'][0:4]])
+
+        for artist in item['artists']:
+            cursor.execute(sql_requests.insert_artists, [artist])
+            cursor.execute(sql_requests.insert_albums_artists, [item['album'], artist])
+            for genre in item['artists'][artist]:
+                cursor.execute(sql_requests.insert_genres, [genre])
+
+        cursor.execute(sql_requests.insert_tracks, [item['track'], item['duration'] / 1000, item['album']])
+
+        for artist in item['artists']:
+            for genre in item['artists'][artist]:
+                cursor.execute(sql_requests.insert_genres_artists, [genre, artist])
+
+    conn.commit()
+    cursor.close()
+    conn.close()
+
+
+
 def save_results(dbname: str, user: str, password: str, host: str):
-
-    sel_albums = 'SELECT name, start_year FROM albums WHERE albums.start_year = 2018 ORDER BY name'
-
-    sel_max_duration_track = 'SELECT name, duration FROM tracks ORDER BY duration DESC LIMIT 1'
-
-    sel_3_5_min_track = 'SELECT name from tracks WHERE duration >= 60*3.5 ORDER BY name'
-
-    sel_2018_2020_collections = 'SELECT name FROM collections WHERE start_year >= 2018 ' \
-                                'AND start_year <= 2020 ORDER BY start_year'
-
-    sel_artist_name_one_word = "SELECT name FROM artists WHERE TRIM(name) NOT LIKE '% %' ORDER BY name"
-
-    sel_track_with_word_my = "SELECT name FROM tracks WHERE LOWER(name) LIKE '% мой %'" \
-                   "OR LOWER(name) LIKE 'мой %' " \
-                   "OR LOWER(name) LIKE '% мой' " \
-                   "OR LOWER(name) LIKE '% my %' " \
-                   "OR LOWER(name) LIKE 'my %'	" \
-                   "OR LOWER(name) LIKE '% my';"
-
     conn = psycopg2.connect(dbname=dbname, user=user,
                             password=password, host=host)
     cursor = conn.cursor()
 
-    cursor.execute(sel_albums)
+    cursor.execute(sql_requests.sel_albums)
     records = cursor.fetchall()
     write_result(records, 'albums_2018.txt')
 
-    cursor.execute(sel_max_duration_track)
+    cursor.execute(sql_requests.sel_max_duration_track)
     records = cursor.fetchall()
     write_result(records, 'max_duration_track.txt')
 
-    cursor.execute(sel_3_5_min_track)
+    cursor.execute(sql_requests.sel_3_5_min_track)
     records = cursor.fetchall()
     write_result(records, 'sel_3_5_min_track.txt')
 
-    cursor.execute(sel_2018_2020_collections)
+    cursor.execute(sql_requests.sel_2018_2020_collections)
     records = cursor.fetchall()
     write_result(records, 'sel_2018_2020_collections.txt')
 
-    cursor.execute(sel_artist_name_one_word)
+    cursor.execute(sql_requests.sel_artist_name_one_word)
     records = cursor.fetchall()
     write_result(records, 'sel_artist_name_one_word.txt')
 
-    cursor.execute(sel_track_with_word_my)
+    cursor.execute(sql_requests.sel_track_with_word_my)
     records = cursor.fetchall()
     write_result(records, 'sel_track_with_word_my.txt')
 
+    cursor.execute(sql_requests_2.count_artists_in_genres)
+    records = cursor.fetchall()
+    write_result(records, 'count_artists_in_genres.txt')
+
+    cursor.execute(sql_requests_2.count_tracks_in_19_20)
+    records = cursor.fetchall()
+    write_result(records, 'count_tracks_in_19_20.txt')
+
+    cursor.execute(sql_requests_2.avr_dur_tracks_by_albums)
+    records = cursor.fetchall()
+    write_result(records, 'avr_dur_tracks_by_albums.txt')
+
+    cursor.execute(sql_requests_2.artist_not_20)
+    records = cursor.fetchall()
+    write_result(records, 'artist_not_20.txt')
+
+    cursor.execute(sql_requests_2.specific_artist)
+    records = cursor.fetchall()
+    write_result(records, 'specific_artist.txt')
+
+    cursor.execute(sql_requests_2.plst_with_artist_more_1_genre)
+    records = cursor.fetchall()
+    write_result(records, 'plst_with_artist_more_1_genre.txt')
+
+    cursor.execute(sql_requests_2.tracks_not_in_playlists)
+    records = cursor.fetchall()
+    write_result(records, 'tracks_not_in_playlists.txt')
+
+    cursor.execute(sql_requests_2.artist_min_track)
+    records = cursor.fetchall()
+    write_result(records, 'artist_min_track.txt')
+
+    cursor.execute(sql_requests_2.albums_min_tracks)
+    records = cursor.fetchall()
+    write_result(records, 'albums_min_tracks.txt')
+
     cursor.close()
     conn.close()
+
 
 def write_result(records: list, file_name: str):
     with open(file_name, mode='w', encoding='utf-8') as f:
@@ -135,14 +161,26 @@ def write_result(records: list, file_name: str):
 
 
 if __name__ == '__main__':
+    client_id = 'd018c4cbd53c4ba8b1568ecae7e7f976'
+    client_secret = '51a75365a27f45bc8a00af6efbd0b4f7'
+    db_pass = '@Kab189100!'
 
     playlists_ids = ['06iN03o811VWPvLwayMETN', '1iqt8e4JKpN3YxIxy86djO', '4ZiYJzYXl6clxsL0er7fdu',
-                            '37i9dQZEVXbNG2KDcFcKOF', '37i9dQZEVXbLiRSasKsNU9', '37i9dQZEVXbNv6cjoMVCyg',
-                            '37i9dQZF1DXdxcBWuJkbcy', '37i9dQZF1DWVciwe52Zt0R']
+                     '37i9dQZEVXbNG2KDcFcKOF', '37i9dQZEVXbLiRSasKsNU9', '37i9dQZEVXbNv6cjoMVCyg',
+                     '37i9dQZF1DXdxcBWuJkbcy', '37i9dQZF1DWVciwe52Zt0R']
 
-    get_data(playlists_ids, client_id='dummy', client_secret='dummy', limit=20)
+    album_ids = ['4u5Ik7NMYl3EITJngbMS4V', '1YuRC8Fj5XdgpuoA7yBDnr', '5htuLCzUNQ5BRlngbw20Mu', '6SbrIpVsaJ5wgCQtMMwVR2',
+                 '16iIPsnAjGZea8TeOCzeN8']
 
-    fill_db(dbname='music', user='postgres', password='dummy', host='localhost')
+    # get_playlists(playlists_ids, client_id=client_id, client_secret=client_secret, limit=20,
+    #                 file_name = 'db_playlists.json')
+    #
+    # fill_playlists(dbname='music', user='postgres', password=db_pass, host='localhost',
+    #                 file_name = 'db_playlists.json')
 
-    save_results(dbname='music', user='postgres', password='dummy', host='localhost')
+    # get_albums(album_ids=album_ids, limit=20, client_id=client_id, client_secret=client_secret,
+    #           file_name='db_albums.json')
+    #
+    # fill_albums(dbname='music', user='postgres', password=db_pass, host='localhost', file_name = 'db_albums.json')
 
+    save_results(dbname='music', user='postgres', password=db_pass, host='localhost')

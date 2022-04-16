@@ -895,6 +895,21 @@
   {
     "playlist": "Top Songs - Global",
     "playlist_release": 2019,
+    "album": "First Class",
+    "album_release": "2022-04-08",
+    "track": "First Class",
+    "duration": 173947,
+    "artists": {
+      "Jack Harlow": [
+        "deep underground hip hop",
+        "kentucky hip hop",
+        "rap"
+      ]
+    }
+  },
+  {
+    "playlist": "Top Songs - Global",
+    "playlist_release": 2019,
     "album": "Dreamland (+ Bonus Levels)",
     "album_release": "2020-08-06",
     "track": "Heat Waves",
@@ -950,8 +965,8 @@
   {
     "playlist": "Top Songs - Global",
     "playlist_release": 2019,
-    "album": "Envolver",
-    "album_release": "2021-11-11",
+    "album": "Versions of Me",
+    "album_release": "2022-04-12",
     "track": "Envolver",
     "duration": 193805,
     "artists": {
@@ -960,6 +975,44 @@
         "funk pop",
         "pagode baiano",
         "pop nacional"
+      ]
+    }
+  },
+  {
+    "playlist": "Top Songs - Global",
+    "playlist_release": 2019,
+    "album": "Familia",
+    "album_release": "2022-04-07",
+    "track": "Bam Bam (feat. Ed Sheeran)",
+    "duration": 206070,
+    "artists": {
+      "Camila Cabello": [
+        "dance pop",
+        "pop",
+        "post-teen pop"
+      ],
+      "Ed Sheeran": [
+        "pop",
+        "uk pop"
+      ]
+    }
+  },
+  {
+    "playlist": "Top Songs - Global",
+    "playlist_release": 2019,
+    "album": "MONTERO",
+    "album_release": "2021-09-17",
+    "track": "INDUSTRY BABY (feat. Jack Harlow)",
+    "duration": 212352,
+    "artists": {
+      "Lil Nas X": [
+        "lgbtq+ hip hop",
+        "pop"
+      ],
+      "Jack Harlow": [
+        "deep underground hip hop",
+        "kentucky hip hop",
+        "rap"
       ]
     }
   },
@@ -992,25 +1045,6 @@
   {
     "playlist": "Top Songs - Global",
     "playlist_release": 2019,
-    "album": "MONTERO",
-    "album_release": "2021-09-17",
-    "track": "INDUSTRY BABY (feat. Jack Harlow)",
-    "duration": 212352,
-    "artists": {
-      "Lil Nas X": [
-        "lgbtq+ hip hop",
-        "pop"
-      ],
-      "Jack Harlow": [
-        "deep underground hip hop",
-        "kentucky hip hop",
-        "rap"
-      ]
-    }
-  },
-  {
-    "playlist": "Top Songs - Global",
-    "playlist_release": 2019,
     "album": "abcdefu",
     "album_release": "2021-08-13",
     "track": "abcdefu",
@@ -1024,15 +1058,13 @@
   {
     "playlist": "Top Songs - Global",
     "playlist_release": 2019,
-    "album": "Plan A",
-    "album_release": "2022-03-23",
-    "track": "Plan A",
-    "duration": 178202,
+    "album": "Una Noche en Medellín",
+    "album_release": "2022-01-21",
+    "track": "Una Noche en Medellín",
+    "duration": 153750,
     "artists": {
-      "Paulo Londra": [
-        "argentine hip hop",
-        "trap argentino",
-        "trap latino"
+      "Cris Mj": [
+        "mambo chileno"
       ]
     }
   },
@@ -1078,38 +1110,6 @@
   {
     "playlist": "Top Songs - Global",
     "playlist_release": 2019,
-    "album": "Una Noche en Medellín",
-    "album_release": "2022-01-21",
-    "track": "Una Noche en Medellín",
-    "duration": 153750,
-    "artists": {
-      "Cris Mj": [
-        "mambo chileno"
-      ]
-    }
-  },
-  {
-    "playlist": "Top Songs - Global",
-    "playlist_release": 2019,
-    "album": "Bam Bam (feat. Ed Sheeran)",
-    "album_release": "2022-03-04",
-    "track": "Bam Bam (feat. Ed Sheeran)",
-    "duration": 206070,
-    "artists": {
-      "Camila Cabello": [
-        "dance pop",
-        "pop",
-        "post-teen pop"
-      ],
-      "Ed Sheeran": [
-        "pop",
-        "uk pop"
-      ]
-    }
-  },
-  {
-    "playlist": "Top Songs - Global",
-    "playlist_release": 2019,
     "album": "MIDDLE OF THE NIGHT",
     "album_release": "2020-01-10",
     "track": "MIDDLE OF THE NIGHT",
@@ -1134,6 +1134,21 @@
         "trap latino"
       ],
       "Chencho Corleone": []
+    }
+  },
+  {
+    "playlist": "Top Songs - Global",
+    "playlist_release": 2019,
+    "album": "Plan A",
+    "album_release": "2022-03-23",
+    "track": "Plan A",
+    "duration": 178202,
+    "artists": {
+      "Paulo Londra": [
+        "argentine hip hop",
+        "trap argentino",
+        "trap latino"
+      ]
     }
   },
   {
@@ -1167,6 +1182,19 @@
   {
     "playlist": "Top Songs - Global",
     "playlist_release": 2019,
+    "album": "SOUR",
+    "album_release": "2021-05-21",
+    "track": "good 4 u",
+    "duration": 178146,
+    "artists": {
+      "Olivia Rodrigo": [
+        "pop"
+      ]
+    }
+  },
+  {
+    "playlist": "Top Songs - Global",
+    "playlist_release": 2019,
     "album": "30",
     "album_release": "2021-11-19",
     "track": "Easy On Me",
@@ -1181,29 +1209,15 @@
     }
   },
   {
-    "playlist": "Top Songs - Global",
-    "playlist_release": 2019,
-    "album": "SOUR",
-    "album_release": "2021-05-21",
-    "track": "good 4 u",
-    "duration": 178146,
+    "playlist": "Viral 50 - Global",
+    "playlist_release": 2020,
+    "album": "Gökyüzünü Tutamam",
+    "album_release": "2021-07-23",
+    "track": "Gökyüzünü Tutamam",
+    "duration": 195000,
     "artists": {
-      "Olivia Rodrigo": [
-        "pop"
-      ]
-    }
-  },
-  {
-    "playlist": "Top Songs - Global",
-    "playlist_release": 2019,
-    "album": "MONTERO",
-    "album_release": "2021-09-17",
-    "track": "THATS WHAT I WANT",
-    "duration": 143901,
-    "artists": {
-      "Lil Nas X": [
-        "lgbtq+ hip hop",
-        "pop"
+      "Can Koç": [
+        "turkce slow sarkilar"
       ]
     }
   },
@@ -1217,19 +1231,6 @@
     "artists": {
       "Cafuné": [
         "brooklyn indie"
-      ]
-    }
-  },
-  {
-    "playlist": "Viral 50 - Global",
-    "playlist_release": 2020,
-    "album": "Gökyüzünü Tutamam",
-    "album_release": "2021-07-23",
-    "track": "Gökyüzünü Tutamam",
-    "duration": 195000,
-    "artists": {
-      "Can Koç": [
-        "turkce slow sarkilar"
       ]
     }
   },
@@ -1267,14 +1268,12 @@
   {
     "playlist": "Viral 50 - Global",
     "playlist_release": 2020,
-    "album": "#doyalike",
-    "album_release": "2020",
-    "track": "#doyalike",
-    "duration": 183066,
+    "album": "untitled",
+    "album_release": "1970-01-02",
+    "track": "untitled",
+    "duration": 183080,
     "artists": {
-      "kazeWIW": [
-        "sped up"
-      ]
+      "ExotiiC-": []
     }
   },
   {
@@ -1303,7 +1302,9 @@
         "post-teen pop"
       ],
       "Finneas O'Connell": [],
-      "Josh Levi": [],
+      "Josh Levi": [
+        "trap soul"
+      ],
       "Topher Ngo": [],
       "Grayson Villanueva": []
     }
@@ -1350,6 +1351,17 @@
   {
     "playlist": "Viral 50 - Global",
     "playlist_release": 2020,
+    "album": "Préstame Tu Corazón",
+    "album_release": "2022-03-13",
+    "track": "Préstame Tu Corazón",
+    "duration": 182073,
+    "artists": {
+      "Efecto Elegante": []
+    }
+  },
+  {
+    "playlist": "Viral 50 - Global",
+    "playlist_release": 2020,
     "album": "Love, Maybe (A Business Proposal OST Special Track)",
     "album_release": "2022-02-18",
     "track": "Love, Maybe",
@@ -1359,17 +1371,6 @@
         "k-pop",
         "korean pop"
       ]
-    }
-  },
-  {
-    "playlist": "Viral 50 - Global",
-    "playlist_release": 2020,
-    "album": "Préstame Tu Corazón",
-    "album_release": "2022-03-13",
-    "track": "Préstame Tu Corazón",
-    "duration": 182073,
-    "artists": {
-      "Efecto Elegante": []
     }
   },
   {
@@ -1448,10 +1449,22 @@
     "artists": {
       "Danny Ocean": [
         "latin",
-        "latin pop",
         "pop venezolano",
         "reggaeton",
         "trap latino"
+      ]
+    }
+  },
+  {
+    "playlist": "Viral 50 - Global",
+    "playlist_release": 2020,
+    "album": "Son Durağın",
+    "album_release": "2022-01-21",
+    "track": "Son Durağın",
+    "duration": 236630,
+    "artists": {
+      "Kahraman Deniz": [
+        "turkish pop"
       ]
     }
   },
@@ -1472,32 +1485,16 @@
   {
     "playlist": "Viral 50 - Global",
     "playlist_release": 2020,
-    "album": "Jolly O Gymkhana (From \"Beast\")",
-    "album_release": "2022-03-19",
-    "track": "Jolly O Gymkhana (From \"Beast\")",
-    "duration": 208064,
+    "album": "Dear Alcohol",
+    "album_release": "2022-03-11",
+    "track": "Dear Alcohol",
+    "duration": 236307,
     "artists": {
-      "Thalapathy Vijay": [
-        "tamil pop"
-      ],
-      "Anirudh Ravichander": [
-        "desi hip hop",
-        "filmi",
-        "tamil hip hop"
-      ]
-    }
-  },
-  {
-    "playlist": "Viral 50 - Global",
-    "playlist_release": 2020,
-    "album": "Glad U Came (feat. ZieZie)",
-    "album_release": "2022-03-04",
-    "track": "Glad U Came (feat. ZieZie)",
-    "duration": 125142,
-    "artists": {
-      "Liilz": [],
-      "ZieZie": [
-        "uk hip hop"
+      "Dax": [
+        "canadian hip hop",
+        "ottawa rap",
+        "pop rap",
+        "social media pop"
       ]
     }
   },
@@ -1541,23 +1538,23 @@
   {
     "playlist": "Viral 50 - Germany",
     "playlist_release": 2021,
-    "album": "Rainfall",
-    "album_release": "2022-02-18",
-    "track": "Rainfall",
-    "duration": 166569,
-    "artists": {
-      "Tom Santa": []
-    }
-  },
-  {
-    "playlist": "Viral 50 - Germany",
-    "playlist_release": 2021,
     "album": "Grape Soda",
     "album_release": "2022-03-12",
     "track": "Grape Soda",
     "duration": 77647,
     "artists": {
       "Lyno Nine8": []
+    }
+  },
+  {
+    "playlist": "Viral 50 - Germany",
+    "playlist_release": 2021,
+    "album": "Rainfall",
+    "album_release": "2022-02-18",
+    "track": "Rainfall",
+    "duration": 166569,
+    "artists": {
+      "Tom Santa": []
     }
   },
   {
@@ -1575,6 +1572,24 @@
       ],
       "BNXN fka Buju": [
         "nigerian pop"
+      ]
+    }
+  },
+  {
+    "playlist": "Viral 50 - Germany",
+    "playlist_release": 2021,
+    "album": "LEBENSLANG (HBz Remix)",
+    "album_release": "2022-02-18",
+    "track": "LEBENSLANG - HBz Remix",
+    "duration": 170783,
+    "artists": {
+      "Tream": [
+        "partyschlager"
+      ],
+      "treamiboii": [],
+      "HBz": [
+        "melbourne bounce international",
+        "partyschlager"
       ]
     }
   },
@@ -1603,18 +1618,15 @@
   {
     "playlist": "Viral 50 - Germany",
     "playlist_release": 2021,
-    "album": "LEBENSLANG (HBz Remix)",
-    "album_release": "2022-02-18",
-    "track": "LEBENSLANG - HBz Remix",
-    "duration": 170783,
+    "album": "Слышь, Малая",
+    "album_release": "2021-12-30",
+    "track": "Слышь, Малая",
+    "duration": 96107,
     "artists": {
-      "Tream": [
-        "partyschlager"
-      ],
-      "treamiboii": [],
-      "HBz": [
-        "melbourne bounce international",
-        "partyschlager"
+      "Dzharo & Khanza": [
+        "russian dance",
+        "russian hip hop",
+        "russian pop"
       ]
     }
   },
@@ -1635,21 +1647,6 @@
   {
     "playlist": "Viral 50 - Germany",
     "playlist_release": 2021,
-    "album": "Слышь, Малая",
-    "album_release": "2021-12-30",
-    "track": "Слышь, Малая",
-    "duration": 96107,
-    "artists": {
-      "Dzharo & Khanza": [
-        "russian dance",
-        "russian hip hop",
-        "russian pop"
-      ]
-    }
-  },
-  {
-    "playlist": "Viral 50 - Germany",
-    "playlist_release": 2021,
     "album": "Turning Red (Original Motion Picture Soundtrack)",
     "album_release": "2022-03-11",
     "track": "Nobody Like U",
@@ -1660,7 +1657,9 @@
         "post-teen pop"
       ],
       "Finneas O'Connell": [],
-      "Josh Levi": [],
+      "Josh Levi": [
+        "trap soul"
+      ],
       "Topher Ngo": [],
       "Grayson Villanueva": []
     }
@@ -1679,39 +1678,6 @@
   {
     "playlist": "Viral 50 - Germany",
     "playlist_release": 2021,
-    "album": "Allein",
-    "album_release": "2022-02-25",
-    "track": "Allein",
-    "duration": 153740,
-    "artists": {
-      "Babymoench": []
-    }
-  },
-  {
-    "playlist": "Viral 50 - Germany",
-    "playlist_release": 2021,
-    "album": "Richtig scheisse",
-    "album_release": "2022-03-11",
-    "track": "Richtig scheisse",
-    "duration": 141728,
-    "artists": {
-      "PANTHA": []
-    }
-  },
-  {
-    "playlist": "Viral 50 - Germany",
-    "playlist_release": 2021,
-    "album": "Böses Chakra",
-    "album_release": "2022-03-18",
-    "track": "Böses Chakra",
-    "duration": 178144,
-    "artists": {
-      "Hassuntu": []
-    }
-  },
-  {
-    "playlist": "Viral 50 - Germany",
-    "playlist_release": 2021,
     "album": "GOLDEN FLOWER",
     "album_release": "2020-10-29",
     "track": "KAWAII",
@@ -1722,6 +1688,17 @@
         "tatar pop",
         "zhenskiy rep"
       ]
+    }
+  },
+  {
+    "playlist": "Viral 50 - Germany",
+    "playlist_release": 2021,
+    "album": "Allein",
+    "album_release": "2022-02-25",
+    "track": "Allein",
+    "duration": 153740,
+    "artists": {
+      "Babymoench": []
     }
   },
   {
@@ -1754,16 +1731,43 @@
   {
     "playlist": "Viral 50 - Germany",
     "playlist_release": 2021,
-    "album": "Rave Harder Techno Bass",
-    "album_release": "2022-03-18",
-    "track": "Rave Harder Techno Bass",
-    "duration": 360000,
+    "album": "Sehnsucht",
+    "album_release": "2022-03-04",
+    "track": "Sehnsucht",
+    "duration": 152826,
     "artists": {
-      "Mark Dekoda": [
-        "dark techno",
-        "hard minimal techno",
-        "tech house"
+      "Miksu / Macloud": [
+        "german hip hop"
+      ],
+      "t-low": [
+        "german hip hop",
+        "german trap"
       ]
+    }
+  },
+  {
+    "playlist": "Viral 50 - Germany",
+    "playlist_release": 2021,
+    "album": "Glad U Came (feat. ZieZie)",
+    "album_release": "2022-03-04",
+    "track": "Glad U Came (feat. ZieZie)",
+    "duration": 125142,
+    "artists": {
+      "Liilz": [],
+      "ZieZie": [
+        "uk hip hop"
+      ]
+    }
+  },
+  {
+    "playlist": "Viral 50 - Germany",
+    "playlist_release": 2021,
+    "album": "Richtig scheisse",
+    "album_release": "2022-03-11",
+    "track": "Richtig scheisse",
+    "duration": 141728,
+    "artists": {
+      "PANTHA": []
     }
   },
   {
@@ -1801,61 +1805,75 @@
   {
     "playlist": "Motivation Mix",
     "playlist_release": 2022,
-    "album": "Down For The Ride",
-    "album_release": "2021-04-16",
-    "track": "Down For The Ride",
-    "duration": 160593,
+    "album": "Creep (mint Singles)",
+    "album_release": "2020-03-20",
+    "track": "Creep - mint Singles",
+    "duration": 161190,
     "artists": {
-      "ItaloBrothers": [
+      "R3HAB": [
         "dance pop",
-        "europop",
-        "hands up",
-        "italo dance",
-        "pop dance"
-      ]
-    }
-  },
-  {
-    "playlist": "Motivation Mix",
-    "playlist_release": 2022,
-    "album": "Complicated (Faustix Remix)",
-    "album_release": "2019-06-28",
-    "track": "Complicated - Faustix Remix",
-    "duration": 147840,
-    "artists": {
-      "Alexander Oscar": [
-        "danish pop"
-      ],
-      "SVEA": [
-        "swedish pop"
-      ],
-      "Faustix": [
-        "dakke dak",
-        "danish pop"
-      ]
-    }
-  },
-  {
-    "playlist": "Motivation Mix",
-    "playlist_release": 2022,
-    "album": "Kings & Queens (The Remixes)",
-    "album_release": "2020-03-19",
-    "track": "Kings & Queens - MOTi Remix",
-    "duration": 180952,
-    "artists": {
-      "Ava Max": [
-        "dance pop",
-        "pop"
-      ],
-      "MOTi": [
-        "dance pop",
+        "dutch house",
         "edm",
         "electro house",
-        "house",
+        "pop",
+        "pop dance",
+        "progressive electro house",
+        "slap house",
+        "tropical house"
+      ],
+      "GATTÜSO": [
+        "edm",
+        "electro house",
         "pop dance",
         "pop edm",
         "tropical house"
       ]
+    }
+  },
+  {
+    "playlist": "Motivation Mix",
+    "playlist_release": 2022,
+    "album": "Drive (feat. Wes Nelson)",
+    "album_release": "2021-07-30",
+    "track": "Drive (feat. Wes Nelson)",
+    "duration": 179374,
+    "artists": {
+      "Clean Bandit": [
+        "dance pop",
+        "edm",
+        "pop",
+        "pop dance",
+        "tropical house",
+        "uk dance",
+        "uk funky"
+      ],
+      "Topic": [
+        "dance pop",
+        "edm",
+        "electro house",
+        "german dance",
+        "pop dance",
+        "pop edm",
+        "tropical house"
+      ],
+      "Wes Nelson": []
+    }
+  },
+  {
+    "playlist": "Motivation Mix",
+    "playlist_release": 2022,
+    "album": "Unbreakable (feat. Clarence Coffee Jr.)",
+    "album_release": "2020-07-31",
+    "track": "Unbreakable (feat. Clarence Coffee Jr.)",
+    "duration": 238627,
+    "artists": {
+      "BUNT.": [
+        "deep tropical house",
+        "pop dance",
+        "pop edm",
+        "tropical house"
+      ],
+      "Clarence Coffee Jr.": []
     }
   },
   {
@@ -1889,80 +1907,82 @@
   {
     "playlist": "Motivation Mix",
     "playlist_release": 2022,
-    "album": "Bruises EP",
-    "album_release": "2019-09-27",
-    "track": "Bruises - Steve Void Remix",
-    "duration": 212280,
+    "album": "Gotta Be You",
+    "album_release": "2021-01-08",
+    "track": "Gotta Be You",
+    "duration": 149032,
     "artists": {
-      "Lewis Capaldi": [
+      "NERVO": [
+        "australian dance",
+        "dance pop",
+        "edm",
+        "electra",
+        "electro house",
+        "house",
+        "pop dance",
+        "pop edm",
+        "progressive electro house",
+        "progressive house",
+        "tropical house"
+      ],
+      "Carla Monroe": []
+    }
+  },
+  {
+    "playlist": "Motivation Mix",
+    "playlist_release": 2022,
+    "album": "The Answer",
+    "album_release": "2021-11-25",
+    "track": "The Answer",
+    "duration": 169523,
+    "artists": {
+      "Tom & Jame": [
+        "dutch edm",
+        "electro house",
+        "pop edm",
+        "sky room"
+      ],
+      "Yton": []
+    }
+  },
+  {
+    "playlist": "Motivation Mix",
+    "playlist_release": 2022,
+    "album": "Shivers (Ofenbach Remix)",
+    "album_release": "2021-10-08",
+    "track": "Shivers - Ofenbach Remix",
+    "duration": 187247,
+    "artists": {
+      "Ed Sheeran": [
         "pop",
         "uk pop"
       ],
-      "Steve Void": [
-        "pop edm",
-        "slap house"
-      ]
-    }
-  },
-  {
-    "playlist": "Motivation Mix",
-    "playlist_release": 2022,
-    "album": "Mr. Navigator",
-    "album_release": "2019-09-13",
-    "track": "Mr. Navigator",
-    "duration": 152238,
-    "artists": {
-      "Armin van Buuren": [
-        "dutch trance",
-        "edm",
-        "pop dance",
-        "progressive house",
-        "trance"
-      ],
-      "Tempo Giusto": [
-        "finnish edm",
-        "progressive house",
-        "progressive trance",
-        "progressive uplifting trance",
-        "tech trance",
-        "trance",
-        "uplifting trance"
-      ]
-    }
-  },
-  {
-    "playlist": "Motivation Mix",
-    "playlist_release": 2022,
-    "album": "Hardcore Vibes",
-    "album_release": "2021-11-12",
-    "track": "Hardcore Vibes - Radio Edit",
-    "duration": 161000,
-    "artists": {
-      "Keanu Silva": [
+      "Ofenbach": [
+        "dance pop",
         "edm",
         "electro house",
-        "future house",
-        "house",
+        "pop",
         "pop dance",
-        "pop edm"
+        "tropical house"
       ]
     }
   },
   {
     "playlist": "Motivation Mix",
     "playlist_release": 2022,
-    "album": "Running",
-    "album_release": "2021-12-08",
-    "track": "Running (feat. Meg Myers) - Original Mix",
-    "duration": 385436,
+    "album": "Morenita",
+    "album_release": "2021-06-25",
+    "track": "Morenita",
+    "duration": 176491,
     "artists": {
-      "Anyma": [],
-      "Meg Myers": [
-        "dark pop",
-        "electropop",
-        "modern rock",
-        "shimmer pop"
-      ]
+      "HUGEL": [
+        "deep house",
+        "edm",
+        "house",
+        "pop dance",
+        "tropical house"
+      ],
+      "Cumbiafrica": []
     }
   },
   {
@@ -2007,48 +2027,50 @@
   {
     "playlist": "Motivation Mix",
     "playlist_release": 2022,
-    "album": "Take It Off",
-    "album_release": "2021-05-07",
-    "track": "Take It Off",
-    "duration": 135874,
+    "album": "Higher Ground (feat. John Martin)",
+    "album_release": "2020-05-14",
+    "track": "Higher Ground (feat. John Martin)",
+    "duration": 206279,
     "artists": {
-      "Mike Gudmann": [
-        "slap house"
+      "Martin Garrix": [
+        "dance pop",
+        "dutch edm",
+        "edm",
+        "electro house",
+        "pop",
+        "pop dance",
+        "progressive house",
+        "tropical house"
       ],
-      "Popcorn!": [],
-      "Medon": [
-        "melbourne bounce international"
-      ],
-      "AXYL": []
+      "John Martin": [
+        "pop edm"
+      ]
     }
   },
   {
     "playlist": "Motivation Mix",
     "playlist_release": 2022,
-    "album": "Make My Mind Go",
-    "album_release": "2021-06-11",
-    "track": "Make My Mind Go (With Jonasu)",
-    "duration": 151367,
+    "album": "The Motto (Tiësto’s VIP Mix)",
+    "album_release": "2021-12-17",
+    "track": "The Motto - Tiësto’s VIP Mix",
+    "duration": 206160,
     "artists": {
-      "Martin Jensen": [
+      "Tiësto": [
+        "big room",
+        "brostep",
         "dance pop",
-        "danish electronic",
-        "deep house",
+        "dutch edm",
         "edm",
-        "electro house",
+        "house",
         "pop",
         "pop dance",
-        "pop edm",
+        "slap house",
+        "trance",
         "tropical house"
       ],
-      "Rompasso": [
-        "g-house",
-        "pop edm",
-        "russian edm"
-      ],
-      "FAULHABER": [],
-      "Jonasu": [
-        "dutch edm"
+      "Ava Max": [
+        "dance pop",
+        "pop"
       ]
     }
   },
@@ -2066,123 +2088,103 @@
   {
     "playlist": "Motivation Mix",
     "playlist_release": 2022,
-    "album": "Easier (Seeb Remix)",
-    "album_release": "2019-07-12",
-    "track": "Easier - Seeb Remix",
-    "duration": 165767,
+    "album": "Away",
+    "album_release": "2021-04-09",
+    "track": "Away",
+    "duration": 185625,
     "artists": {
-      "5 Seconds of Summer": [
-        "boy band",
-        "dance pop",
-        "pop",
-        "post-teen pop"
-      ],
-      "Seeb": [
+      "VIZE": [
         "dance pop",
         "edm",
-        "electro house",
-        "norwegian pop",
-        "pop",
+        "german dance",
         "pop dance",
-        "pop edm",
+        "slap house",
         "tropical house"
-      ]
+      ],
+      "ALOTT": []
     }
   },
   {
     "playlist": "Motivation Mix",
     "playlist_release": 2022,
-    "album": "Calabria",
-    "album_release": "2021-04-16",
-    "track": "Calabria",
-    "duration": 128562,
+    "album": "No Fun",
+    "album_release": "2021-11-19",
+    "track": "No Fun",
+    "duration": 130412,
     "artists": {
-      "DMNDS": [],
-      "Fallen Roses": [
-        "lo-fi cover"
+      "Armin van Buuren": [
+        "dutch trance",
+        "edm",
+        "pop dance",
+        "progressive house",
+        "trance"
       ],
-      "Strange Fruits Music": [
-        "lo-fi product"
-      ],
-      "Lujavo": [
-        "mexican edm"
-      ],
-      "Nito-Onna": []
+      "The Stickmen Project": []
     }
   },
   {
     "playlist": "Motivation Mix",
     "playlist_release": 2022,
-    "album": "Baker Street",
-    "album_release": "2021-04-23",
-    "track": "Baker Street",
-    "duration": 195000,
+    "album": "edamame (feat. Rich Brian) [Diplo Remix]",
+    "album_release": "2021-12-15",
+    "track": "edamame (feat. Rich Brian) - Diplo Remix",
+    "duration": 175309,
     "artists": {
-      "SMYLES": []
-    }
-  },
-  {
-    "playlist": "Motivation Mix",
-    "playlist_release": 2022,
-    "album": "We Got That Cool (feat. Afrojack & Icona Pop)",
-    "album_release": "2019-06-28",
-    "track": "We Got That Cool (feat. Afrojack & Icona Pop)",
-    "duration": 213000,
-    "artists": {
-      "Yves V": [
-        "belgian edm",
+      "bbno$": [
+        "canadian hip hop",
+        "dark trap",
+        "vapor trap"
+      ],
+      "Rich Brian": [
+        "indonesian hip hop"
+      ],
+      "Diplo": [
         "dance pop",
         "edm",
         "electro house",
         "house",
-        "pop dance",
-        "progressive electro house",
-        "slap house",
-        "tropical house"
-      ],
-      "Afrojack": [
-        "big room",
-        "dance pop",
-        "dutch house",
-        "edm",
-        "electro house",
-        "pop dance",
-        "pop rap",
-        "tropical house"
-      ],
-      "Icona Pop": [
-        "candy pop",
-        "dance pop",
-        "edm",
-        "electropop",
-        "metropopolis",
+        "moombahton",
+        "ninja",
         "pop",
         "pop dance",
-        "swedish electropop",
-        "swedish synthpop"
+        "tropical house"
       ]
     }
   },
   {
     "playlist": "Motivation Mix",
     "playlist_release": 2022,
-    "album": "Tension",
-    "album_release": "2021-11-19",
-    "track": "Tension",
-    "duration": 159617,
+    "album": "Roots",
+    "album_release": "2019-08-16",
+    "track": "Roots",
+    "duration": 184563,
     "artists": {
-      "VINAI": [
+      "Valerie Broussard": [
+        "alt z",
+        "modern alternative pop"
+      ],
+      "Galantis": [
         "dance pop",
         "edm",
         "electro house",
-        "melbourne bounce international",
+        "pop",
         "pop dance",
-        "slap house",
         "tropical house"
-      ],
-      "Paradigm": [
-        "slap house"
       ]
+    }
+  },
+  {
+    "playlist": "Motivation Mix",
+    "playlist_release": 2022,
+    "album": "Speechless",
+    "album_release": "2021-10-08",
+    "track": "Speechless",
+    "duration": 150000,
+    "artists": {
+      "Alex Skrindo": [
+        "gaming edm"
+      ],
+      "Matthi J": []
     }
   },
   {
@@ -2567,6 +2569,7 @@
         "electro house",
         "pop",
         "pop dance",
+        "progressive electro house",
         "tropical house"
       ],
       "Sentinel": []
