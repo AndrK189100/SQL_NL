@@ -1292,6 +1292,17 @@
   {
     "playlist": "Viral 50 - Global",
     "playlist_release": 2020,
+    "album": "Olmuyor Böyle",
+    "album_release": "2021-11-12",
+    "track": "Yaralarını Ben Sarayım",
+    "duration": 238355,
+    "artists": {
+      "Berk Baysal": []
+    }
+  },
+  {
+    "playlist": "Viral 50 - Global",
+    "playlist_release": 2020,
     "album": "Turning Red (Original Motion Picture Soundtrack)",
     "album_release": "2022-03-11",
     "track": "Nobody Like U",
@@ -1307,17 +1318,6 @@
       ],
       "Topher Ngo": [],
       "Grayson Villanueva": []
-    }
-  },
-  {
-    "playlist": "Viral 50 - Global",
-    "playlist_release": 2020,
-    "album": "Olmuyor Böyle",
-    "album_release": "2021-11-12",
-    "track": "Yaralarını Ben Sarayım",
-    "duration": 238355,
-    "artists": {
-      "Berk Baysal": []
     }
   },
   {
@@ -1416,48 +1416,6 @@
   {
     "playlist": "Viral 50 - Global",
     "playlist_release": 2020,
-    "album": "Chaand Baaliyan",
-    "album_release": "2020-03-28",
-    "track": "Chaand Baaliyan",
-    "duration": 103264,
-    "artists": {
-      "Aditya A": [
-        "hindi indie"
-      ]
-    }
-  },
-  {
-    "playlist": "Viral 50 - Global",
-    "playlist_release": 2020,
-    "album": "ARASAN DA",
-    "album_release": "2022-03-18",
-    "track": "ARASAN DA",
-    "duration": 191709,
-    "artists": {
-      "UZI": [
-        "turkish trap"
-      ]
-    }
-  },
-  {
-    "playlist": "Viral 50 - Global",
-    "playlist_release": 2020,
-    "album": "@dannocean",
-    "album_release": "2022-02-17",
-    "track": "Fuera del mercado",
-    "duration": 159849,
-    "artists": {
-      "Danny Ocean": [
-        "latin",
-        "pop venezolano",
-        "reggaeton",
-        "trap latino"
-      ]
-    }
-  },
-  {
-    "playlist": "Viral 50 - Global",
-    "playlist_release": 2020,
     "album": "Son Durağın",
     "album_release": "2022-01-21",
     "track": "Son Durağın",
@@ -1465,6 +1423,19 @@
     "artists": {
       "Kahraman Deniz": [
         "turkish pop"
+      ]
+    }
+  },
+  {
+    "playlist": "Viral 50 - Global",
+    "playlist_release": 2020,
+    "album": "Chaand Baaliyan",
+    "album_release": "2020-03-28",
+    "track": "Chaand Baaliyan",
+    "duration": 103264,
+    "artists": {
+      "Aditya A": [
+        "hindi indie"
       ]
     }
   },
@@ -1485,6 +1456,19 @@
   {
     "playlist": "Viral 50 - Global",
     "playlist_release": 2020,
+    "album": "ARASAN DA",
+    "album_release": "2022-03-18",
+    "track": "ARASAN DA",
+    "duration": 191709,
+    "artists": {
+      "UZI": [
+        "turkish trap"
+      ]
+    }
+  },
+  {
+    "playlist": "Viral 50 - Global",
+    "playlist_release": 2020,
     "album": "Dear Alcohol",
     "album_release": "2022-03-11",
     "track": "Dear Alcohol",
@@ -1495,6 +1479,24 @@
         "ottawa rap",
         "pop rap",
         "social media pop"
+      ]
+    }
+  },
+  {
+    "playlist": "Viral 50 - Global",
+    "playlist_release": 2020,
+    "album": "Jolly O Gymkhana (From \"Beast\")",
+    "album_release": "2022-03-19",
+    "track": "Jolly O Gymkhana (From \"Beast\")",
+    "duration": 208064,
+    "artists": {
+      "Thalapathy Vijay": [
+        "tamil pop"
+      ],
+      "Anirudh Ravichander": [
+        "desi hip hop",
+        "filmi",
+        "tamil hip hop"
       ]
     }
   },
@@ -1544,6 +1546,17 @@
     "duration": 77647,
     "artists": {
       "Lyno Nine8": []
+    }
+  },
+  {
+    "playlist": "Viral 50 - Germany",
+    "playlist_release": 2021,
+    "album": "untitled",
+    "album_release": "1970-01-02",
+    "track": "untitled",
+    "duration": 183080,
+    "artists": {
+      "ExotiiC-": []
     }
   },
   {
@@ -1667,6 +1680,28 @@
   {
     "playlist": "Viral 50 - Germany",
     "playlist_release": 2021,
+    "album": "MALO TEBYA (Pxlish Beatz Remix)",
+    "album_release": "2022-02-18",
+    "track": "MALO TEBYA - Pxlish Beatz Remix",
+    "duration": 163997,
+    "artists": {
+      "Pxlish Beatz": []
+    }
+  },
+  {
+    "playlist": "Viral 50 - Germany",
+    "playlist_release": 2021,
+    "album": "Allein",
+    "album_release": "2022-02-25",
+    "track": "Allein",
+    "duration": 153740,
+    "artists": {
+      "Babymoench": []
+    }
+  },
+  {
+    "playlist": "Viral 50 - Germany",
+    "playlist_release": 2021,
     "album": "Kippe",
     "album_release": "2022-03-10",
     "track": "Kippe",
@@ -1688,28 +1723,6 @@
         "tatar pop",
         "zhenskiy rep"
       ]
-    }
-  },
-  {
-    "playlist": "Viral 50 - Germany",
-    "playlist_release": 2021,
-    "album": "Allein",
-    "album_release": "2022-02-25",
-    "track": "Allein",
-    "duration": 153740,
-    "artists": {
-      "Babymoench": []
-    }
-  },
-  {
-    "playlist": "Viral 50 - Germany",
-    "playlist_release": 2021,
-    "album": "MALO TEBYA (Pxlish Beatz Remix)",
-    "album_release": "2022-02-18",
-    "track": "MALO TEBYA - Pxlish Beatz Remix",
-    "duration": 163997,
-    "artists": {
-      "Pxlish Beatz": []
     }
   },
   {
@@ -1748,26 +1761,17 @@
   {
     "playlist": "Viral 50 - Germany",
     "playlist_release": 2021,
-    "album": "Glad U Came (feat. ZieZie)",
-    "album_release": "2022-03-04",
-    "track": "Glad U Came (feat. ZieZie)",
-    "duration": 125142,
+    "album": "Hits 2021 (Mashup)",
+    "album_release": "2022-01-21",
+    "track": "Hits 2021 - Mashup",
+    "duration": 162649,
     "artists": {
-      "Liilz": [],
-      "ZieZie": [
-        "uk hip hop"
+      "Trinix Remix": [],
+      "Trinix": [
+        "bass trap",
+        "new french touch",
+        "tropical house"
       ]
-    }
-  },
-  {
-    "playlist": "Viral 50 - Germany",
-    "playlist_release": 2021,
-    "album": "Richtig scheisse",
-    "album_release": "2022-03-11",
-    "track": "Richtig scheisse",
-    "duration": 141728,
-    "artists": {
-      "PANTHA": []
     }
   },
   {

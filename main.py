@@ -161,9 +161,11 @@ def write_result(records: list, file_name: str):
 
 
 if __name__ == '__main__':
-    client_id = 'd018c4cbd53c4ba8b1568ecae7e7f976'
-    client_secret = '51a75365a27f45bc8a00af6efbd0b4f7'
-    db_pass = '@Kab189100!'
+
+    # Заполнить.
+    client_id = ''
+    client_secret = ''
+    db_pass = ''
 
     playlists_ids = ['06iN03o811VWPvLwayMETN', '1iqt8e4JKpN3YxIxy86djO', '4ZiYJzYXl6clxsL0er7fdu',
                      '37i9dQZEVXbNG2KDcFcKOF', '37i9dQZEVXbLiRSasKsNU9', '37i9dQZEVXbNv6cjoMVCyg',
@@ -172,12 +174,14 @@ if __name__ == '__main__':
     album_ids = ['4u5Ik7NMYl3EITJngbMS4V', '1YuRC8Fj5XdgpuoA7yBDnr', '5htuLCzUNQ5BRlngbw20Mu', '6SbrIpVsaJ5wgCQtMMwVR2',
                  '16iIPsnAjGZea8TeOCzeN8']
 
+    #Раскомментировать.
+
     # get_playlists(playlists_ids, client_id=client_id, client_secret=client_secret, limit=20,
     #                 file_name = 'db_playlists.json')
     #
     # fill_playlists(dbname='music', user='postgres', password=db_pass, host='localhost',
     #                 file_name = 'db_playlists.json')
-
+    #
     # get_albums(album_ids=album_ids, limit=20, client_id=client_id, client_secret=client_secret,
     #           file_name='db_albums.json')
     #
